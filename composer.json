@@ -1,0 +1,24 @@
+{
+    "name": "lordoverlord0/tandava",
+    "description": "Tandava framework",
+    "type": "project",
+    "authors": [
+        {
+            "name": "LordOverLord0",
+            "email": "rofyorug@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tandava\\": "app/model/",
+            "Tandava\\Core\\": "app/model/core/",
+            "Tandava\\Network\\": "app/model/network/",
+            "Tandava\\Date\\": "app/model/date/",
+            "Tandava\\Logger\\": "app/model/logger/",
+            "Tandava\\Sql\\": "app/model/sql/"
+        }
+    }
+}
