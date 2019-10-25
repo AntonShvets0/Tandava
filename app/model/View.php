@@ -21,6 +21,15 @@ class View
         ]);
     }
 
+    /**
+     * @param string $file
+     * @param array $args
+     * @param string $extension
+     * @return string
+     * @throws \Twig\Error\LoaderError
+     * @throws \Twig\Error\RuntimeError
+     * @throws \Twig\Error\SyntaxError
+     */
     public function File(string $file, array $args = [], string $extension = ""): string
     {
         if (empty($extension)) $extension = $this->extension;

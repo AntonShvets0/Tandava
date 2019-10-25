@@ -17,4 +17,15 @@ class DateTime
     {
         return date("H:i:s d.m.y");
     }
+
+    /**
+     * @param int $previousDate
+     * @param int $seconds
+     * @return bool
+     * Проверяет, прошло ли определенное количество секунд с прошлой даты
+     */
+    public static function SecondsHasPassed(int $previousDate, int $seconds)
+    {
+        return time() - $previousDate >= $seconds;
+    }
 }
