@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="663ff129-1331-4c2c-86b4-fc765e22cb7c" name="Default Changelist" comment="Обновлен README.MD&#10;Теперь маршрутизатор может принять в качестве ответа массив">
-      <change afterPath="$PROJECT_DIR$/app/model/core/router/Add.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/core/router/Storage.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/core/router/Uri.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/html.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/Routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/Routes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controller/ControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/ControllerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/core/FunctionHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/core/FunctionHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/core/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/core/router/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-    </list>
+    <list default="true" id="663ff129-1331-4c2c-86b4-fc765e22cb7c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +114,7 @@
       <workItem from="1571753332005" duration="11227000" />
       <workItem from="1571857259150" duration="3210000" />
       <workItem from="1571861074384" duration="19384000" />
-      <workItem from="1572012407512" duration="9711000" />
+      <workItem from="1572012407512" duration="9983000" />
     </task>
     <task id="LOCAL-00001" summary="Добавил методы в DateTime, StringModel, создал класс Percent.&#10;Добавлен README.MD">
       <created>1572018077236</created>
@@ -147,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572018954312</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Переписан маршрутизатор">
+      <created>1572037967476</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572037967476</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Добавил методы в DateTime, StringModel, создал класс Percent.&#10;Добавлен README.MD" />
     <MESSAGE value="Обновлен README.MD&#10;Теперь маршрутизатор может принять в качестве ответа массив" />
-    <option name="LAST_COMMIT_MESSAGE" value="Обновлен README.MD&#10;Теперь маршрутизатор может принять в качестве ответа массив" />
+    <MESSAGE value="Переписан маршрутизатор" />
+    <option name="LAST_COMMIT_MESSAGE" value="Переписан маршрутизатор" />
   </component>
 </project>

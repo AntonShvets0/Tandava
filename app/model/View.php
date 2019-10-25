@@ -3,6 +3,10 @@
 
 namespace Tandava;
 
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
+
 /**
  * Class View
  * @package Tandava
@@ -26,9 +30,9 @@ class View
      * @param array $args
      * @param string $extension
      * @return string
-     * @throws \Twig\Error\LoaderError
-     * @throws \Twig\Error\RuntimeError
-     * @throws \Twig\Error\SyntaxError
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
      */
     public function File(string $file, array $args = [], string $extension = ""): string
     {
