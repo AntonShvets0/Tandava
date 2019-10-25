@@ -131,7 +131,7 @@ class ControllerTest extends \Tandava\View
 }
 ```
 
-<b>Файл "/app/components/Routes.php"**</b>
+<b>Файл "/app/components/Routes.php"</b>
 
 ```php
 $router->Request("/user/(.*)", "test@hello");
