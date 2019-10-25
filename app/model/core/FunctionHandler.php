@@ -14,10 +14,10 @@ class FunctionHandler
      * @param $function
      * @param array $args
      * @param bool $passArray
-     * @return string
+     * @return string|bool
      * Обрабатывает строку
      */
-    public function Handler($function, array $args = [], bool $passArray = false): string
+    public function Handler($function, array $args = [], bool $passArray = false)
     {
         if ($function === false) {
             return "";

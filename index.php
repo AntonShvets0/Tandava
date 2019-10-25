@@ -6,8 +6,6 @@
  * 2019
  */
 
-
-
 const SHOW_ERRORS = true; // Включить показ ошибок
 
 const LOGGING = [ // Логирование
@@ -36,12 +34,11 @@ if (SHOW_ERRORS) {
 
 require_once ROOT . '/vendor/autoload.php';
 
-$router = new Tandava\Core\Router();
+$router = new Tandava\Core\Router\Router();
 
 require_once ROOT . '/app/components/Routes.php';
 
 $router->Run();
-
 
 
 

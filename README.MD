@@ -19,8 +19,8 @@ MVC архитектура
 Маршруты нужно указывать в файле <b>app/components/Routes.php</b>, через экземпляр класса в переменной <b>$router</b>
 
 ```php
-$router->Request("/product/([0-9]*)", "products@list");
-$router->Request("/products/(.*)/([0-9]*)", function ($category, $page) {
+$router->Any("/product/([0-9]*)", "products@list");
+$router->Any("/products/(.*)/([0-9]*)", function ($category, $page) {
 	return "Ваша категория: " . $category . "<br>Ваша страница: " . $page;
 });
 
@@ -37,7 +37,7 @@ $router->Error(404, function () {
 
 Есть несколько вариантов записи функции, которая вызовется, если пользователь зайдет по этому маршруту. Первый, самый простой, это <b>анонимная функция</b>.
 ```php
-$router->Request("/", function () {
+$router->Any("/", function () {
 	return "Hello World";
 }); // выведет на экран Hello World
 ```
@@ -48,7 +48,7 @@ $router->Request("/", function () {
 Если ваша функция возвратит текст, первым символом которого является <b>@</b>, то вызовется номер ошибки, который будет указан после первого символа. Т.е:
 
 ```php
-$router->Request("/", function () {
+$router->Any("/", function () {
 	return "@403";
 });
 
@@ -61,11 +61,17 @@ $router->Error(403, function () {
 
 ```php
 
-$router->Get("/", function ($getData) {}); // вызовется в случае, если будет хоть один GET параметр. Передаст функции первым аргументом массив, содержащий все GET параметры.
+$router->Get("/", function ($getData) {}, $middlewares); // вызовется в случае, если будет хоть один GET параметр. Передаст функции первым аргументом массив, содержащий все GET параметры.
 
-$router->Post("/", function ($postData) {}); // вызовется в случае, е.сли будет хоть один POST параметр. Передаст функции первым аргументом массив, содержащий все GET параметры.
+$router->Post("/", function ($postData) {}, $middlewares); // вызовется в случае, если будет передан метод PUT
 
-$router->Request("/", function() {}); // вызовется в любом случае. В первом аргументе (где указывается путь), можно использовать регулярные выражения
+$router->Put("/", function ($postData) {}, $middlewares); // вызовется в случае, если будет передан метод PUT
+
+$router->Delete("/", function ($postData) {}, $middlewares); // вызовется в случае, если будет передан метод DELETE
+
+$router->Match(["get", "post"], "/", function ($postData) {}, $middlewares); // вызовется в случае, если будет передан один из методов, указанных в первом аргументе
+
+$router->Any("/", function() {}); // вызовется в любом случае
 
 $router->Run(); // запускает маршрутизатор
 

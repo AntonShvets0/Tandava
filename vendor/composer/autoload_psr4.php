@@ -11,6 +11,7 @@ return array(
     'Tandava\\Network\\' => array($baseDir . '/app/model/network'),
     'Tandava\\Logger\\' => array($baseDir . '/app/model/logger'),
     'Tandava\\Date\\' => array($baseDir . '/app/model/date'),
+    'Tandava\\Core\\Router\\' => array($baseDir . '/app/model/core/router'),
     'Tandava\\Core\\' => array($baseDir . '/app/model/core'),
     'Tandava\\' => array($baseDir . '/app/model'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),

@@ -9,12 +9,14 @@
         }
     ],
     "require": {
-        "twig/twig": "^2.12"
+        "twig/twig": "^2.12",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
             "Tandava\\": "app/model/",
             "Tandava\\Core\\": "app/model/core/",
+            "Tandava\\Core\\Router\\": "app/model/core/router",
             "Tandava\\Network\\": "app/model/network/",
             "Tandava\\Date\\": "app/model/date/",
             "Tandava\\Logger\\": "app/model/logger/",

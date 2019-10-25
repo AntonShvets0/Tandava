@@ -2,10 +2,19 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/app/model" isTestSource="false" packagePrefix="Tandava" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model/core/router" isTestSource="false" packagePrefix="Tandava\Core\Router\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model/logger" isTestSource="false" packagePrefix="Tandava\Logger\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model/sql" isTestSource="false" packagePrefix="Tandava\Sql\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model" isTestSource="false" packagePrefix="Tandava\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model/date" isTestSource="false" packagePrefix="Tandava\Date\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model/core" isTestSource="false" packagePrefix="Tandava\Core\" />
+      <sourceFolder url="file://$MODULE_DIR$/app/model/network" isTestSource="false" packagePrefix="Tandava\Network\" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-ctype" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/twig/twig" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="@types/jquery" level="application" />
   </component>
 </module>
