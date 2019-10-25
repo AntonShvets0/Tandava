@@ -34,9 +34,11 @@ class FunctionHandler
             $class = new $controller;
 
             // Если мы должны возвратить массив, то вызываем call_user_func, иначе call_user_func_array
-            return !$passArray ? call_user_func_array([$class, $action], $args) : call_user_func([$class, $action], $args);
-        }
+            $response = !$passArray ? call_user_func_array([$class, $action], $args) : call_user_func([$class, $action], $args);
+        } else $response = !$passArray ? call_user_func_array($function, $args) : call_user_func($function, $args);
 
-        return !$passArray ? call_user_func_array($function, $args) : call_user_func($function, $args);
+        if (is_array($response)) $response = json_encode($response, JSON_UNESCAPED_UNICODE);
+
+        return $response;
     }
 }
